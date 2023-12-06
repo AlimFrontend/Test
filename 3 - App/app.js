@@ -2,11 +2,7 @@
 
 console.log(Date());
 
-console.log('a');
-
 /*
-qawffresdzfvzrerweSD
-
 (>_<)
 (-_-)
 (=_=)
@@ -765,3 +761,10 @@ async function generate() {
 
 
 
+
+function generate(event) {
+  console.log(`scrollX: ${window.scrollX}`);
+  console.log(`scrollY: ${window.scrollY}`);
+  console.log(`clientWidth: ${document.documentElement.clientWidth}`);
+  console.log(`clientHeight: ${document.documentElement.clientHeight}`);
+};
