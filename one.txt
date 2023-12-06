@@ -2,7 +2,7 @@ sup lads
 how to you do?
 
 git add .
-git commit -m "Commit"
+git commit -m "Renaming"
 git push
 
 
