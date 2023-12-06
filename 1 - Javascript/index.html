@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habbit App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <div class="app">
+        <section class="panel">
+            <img class="logo" src="./icons/logo.svg" alt="Логотип Habbit App" />
+            <nav class="menu">
+                <div class="menu__list">
+                </div>
+                <button class="menu__add" onclick="togglePopup()">
+                    <img src="./icons/add.svg" alt="Добавить привычку" />
+                </button>
+            </nav>
+        </section>
+      <section class="content">
+        <header>
+            <h1 class="h1">______</h1>
+            <div class="progress">
+            <div class="progress">
+                <section class="progress__text">
+                    <div class="progress__progres">Progress</div>
+                    <div class="progress__percent">%</div>
+                </section>
+                <section class="progress__cover-bar">
+                    <div class="progress__active-bar"></div>
+                </section>
+            </div>
+        </header>
+        <main>
+            <div id="days"></div>
+            <div class="habbit">
+                <div class="habbit__day">Day _</div>
+                <form class="habbit__form" onsubmit="addDays(event)">
+                  <input name="comment" class="input_icon" type="text" placeholder="Commentary" />
+                  <img
+                    class="input__icon"
+                    src="./icons/comment.svg"
+                    alt="Иконка комментария"
+                  />
+                  <button class="button" type="submit">Ready</button>
+                </form>
+            </div>
+        </main>
+      </section>
+    </div>
+    <div class="cover cover_hidden" id="add-habbit-popup">
+        <div class="popup">
+            <h2>New habbit</h2>
+            <div class="icon-label">Icon</div>
+            <div class="icon-select">
+                <button class="icon icon_active" onclick="setIcon(this, 'food')">
+                    <img src="./icons/food.svg" alt="Food">
+                </button>
+                <button class="icon" onclick="setIcon(this, 'sport')">
+                    <img src="./icons/sport.svg" alt="Sport">
+                </button>
+                <button class="icon" onclick="setIcon(this, 'Water')">
+                    <img src="./icons/Water.svg" alt="Water">
+                </button>
+            </div>
+            <form class="popup__form" onsubmit="addHabbit(event)">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="icon" hidden placeholder="icon" value="sport">
+                <input type="number" name="target" placeholder="Target">
+                <button class="button" type="submit">Add</button>
+            </form>
+            <button class="popup__close" onclick="togglePopup()">
+                <img src="./icons/close.svg" alt="Close">
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

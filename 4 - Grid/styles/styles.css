@@ -1,0 +1,110 @@
+:root {
+	--color-primary: #6C38CC;
+	--color-primary-hover: #5b2bb2;
+	--color-secondary: #E47AD5;
+	--color-text: #FAFAFA;
+	--color-link-hover: #AFB2BF;
+	--color-bg: #16171D;
+	--color-bg-medium: #1E1F29;
+	--color-bg-light: #2E2D3D;
+	--color-stroke: #4D5064;
+	--color-footer: #101114;
+
+	--gradient: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+	
+	--border-8: 8px;
+	--border-10: 10px;
+	--layout-width: 1172px;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+body {
+	background: var(--color-bg);
+	margin: 30px;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+a {
+	text-decoration: none;
+}
+section {
+	max-width: var(--layout-width);
+	background: var(--color-bg);
+	margin: 0 auto;
+}
+
+.header__wrapper {
+	max-width: var(--layout-width);
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 24px;
+}
+
+.headling {
+	margin-bottom: 32px;
+}
+.headling__top {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--color-secondary);
+	margin-bottom: 8px;
+}
+.headling__buttom {
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 120%;
+	color: var(--color-text);
+	margin: 0 0 32px 0;
+}
+
+.chip_wrapper {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 32px;
+	overflow: scroll;
+	margin-right: -24pxx;
+}
+.chip {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--color-text);
+	padding: 8px 16px;
+	border: 1px solid var(--color-stroke);
+	border-radius: var(--border-10);
+	background: none;
+	cursor: pointer;
+	margin: var(--border-8);
+}
+.chip:hover {
+	background: var(--color-bg-medium);
+}
+.chip_active {
+	background: var(--color-primary);
+	border: none;
+}
+.chip_active:hover {
+	background: var(--color-primary-hover);
+}
+
+.card_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 70px;
+	flex-wrap: wrap;
+}
+.card {
+	background: var(--color-bg-medium);
+	border-radius: var(--border-10);
+	color: var(--color-text);
+}

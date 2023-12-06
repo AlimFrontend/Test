@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Школа разработки PurpleSchool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="./images/logo.svg"
+            alt="Логотип PurpleSchool"
+        /></a>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item menu__item_active"><a href="#">Курсы</a></li>
+            <li class="menu__item"><a href="#">О школе</a></li>
+            <li class="menu__item"><a href="#">Блог</a></li>
+            <li class="menu__item"><a href="#">База знаний</a></li>
+          </ul>
+        </nav>
+        <a class="header__login" href="#" aria-label="Вход в личный кабинет">
+          <img src="./images/user.svg" alt="Иконка пользователя" />
+          <div>Вход</div>
+        </a>
+        <button
+          class="header__mobile-menu-button"
+          aria-expanded="false"
+          aria-haspopup="true"
+        >
+          <img src="./images/menu.svg" alt="Мобильное меню" />
+        </button>
+      </div>
+    </header>
+    <section class="section section_light">
+      <div class="hero">
+        <div class="hero__left">
+          <h1 class="hero__h1">
+            Доступные курсы по<br />
+            <span class="hero__h1_gradient">Разработке и DevOps</span>
+          </h1>
+          <div class="hero__cta">
+            <button class="button button_primary">Выбрать курс</button>
+            <button class="button button_ghost">О школе</button>
+          </div>
+        </div>
+        <img
+          class="hero__right"
+          src="./images/video.png"
+          alt="Видео с автором"
+        />
+      </div>
+    </section>
+	<section class="section">
+      <div class="section__wrapper">
+        <div class="headling">
+          <div class="headling__top">Выбрать курс</div>
+          <h2 class="headling__buttom">Выбрать курс</h2>
+        </div>
+		<div class="chip_wrapper">
+			<button class="chip chip_active">Все</button>
+			<button class="chip">Frontend</button>
+			<button class="chip">Backend</button>
+			<button class="chip">DevOps</button>
+			<button class="chip">Soft Skills</button>
+		</div>
+		<div class="courses_wrapper">
+			<div class="course-card">
+				<div class="course-card__cover">
+					<img src="./images/cover.png" alt="Изображение курса">
+				</div>
+				<div class="course-card__body">
+					<div>
+						<div class="course-card__title">React + Next.js - с нуля</div>
+						<div class="course-card__author">Антон Ларичев</div>
+					</div>
+					<div class="course-card__tags">
+						<span class="tag">
+							<img src="./images/star-icon.svg" alt="Иконка рейтинга">
+							4.9</span>
+						<span class="tag">Frontend</span>
+					</div>
+				</div>
+				<div class="course-card__footer">
+					<div>от 1890</div>
+					<button class="button button_primary">Подробнее</button>
+				</div>
+			</div>
+			<div class="course-card">
+				<div class="course-card__cover">
+					<img src="./images/cover.png" alt="Изображение курса">
+				</div>
+				<div class="course-card__body">
+					<div>
+						<div class="course-card__title">React + Next.js - с нуля</div>
+						<div class="course-card__author">Антон Ларичев</div>
+					</div>
+					<div class="course-card__tags">
+						<span class="tag">
+							<img src="./images/star-icon.svg" alt="Иконка рейтинга">
+							4.9</span>
+						<span class="tag">Frontend</span>
+					</div>
+				</div>
+				<div class="course-card__footer">
+					<div>от 1890</div>
+					<button class="button button_primary">Подробнее</button>
+				</div>
+			</div>
+			<div class="course-card">
+				<div class="course-card__cover">
+					<img src="./images/cover.png" alt="Изображение курса">
+				</div>
+				<div class="course-card__body">
+					<div>
+						<div class="course-card__title">React + Next.js - с нуля</div>
+						<div class="course-card__author">Антон Ларичев</div>
+					</div>
+					<div class="course-card__tags">
+						<span class="tag">
+							<img src="./images/star-icon.svg" alt="Иконка рейтинга">
+							4.9</span>
+						<span class="tag">Frontend</span>
+					</div>
+				</div>
+				<div class="course-card__footer">
+					<div>от 1890</div>
+					<button class="button button_primary">Подробнее</button>
+				</div>
+			</div>
+			<div class="course-card">
+				<div class="course-card__cover">
+					<img src="./images/cover.png" alt="Изображение курса">
+				</div>
+				<div class="course-card__body">
+					<div>
+						<div class="course-card__title">React + Next.js - с нуля</div>
+						<div class="course-card__author">Антон Ларичев</div>
+					</div>
+					<div class="course-card__tags">
+						<span class="tag">
+							<img src="./images/star-icon.svg" alt="Иконка рейтинга">
+							4.9</span>
+						<span class="tag">Frontend</span>
+					</div>
+				</div>
+				<div class="course-card__footer">
+					<div>от 1890</div>
+					<button class="button button_primary">Подробнее</button>
+				</div>
+			</div>
+			<div class="course-card">
+				<div class="course-card__cover">
+					<img src="./images/cover.png" alt="Изображение курса">
+				</div>
+				<div class="course-card__body">
+					<div>
+						<div class="course-card__title">React + Next.js - с нуля</div>
+						<div class="course-card__author">Антон Ларичев</div>
+					</div>
+					<div class="course-card__tags">
+						<span class="tag">
+							<img src="./images/star-icon.svg" alt="Иконка рейтинга">
+							4.9</span>
+						<span class="tag">Frontend</span>
+					</div>
+				</div>
+				<div class="course-card__footer">
+					<div>от 1890</div>
+					<button class="button button_primary">Подробнее</button>
+				</div>
+			</div>
+
+		</div>
+    </section>
+	<section class="section section_light">
+      <div class="section__wrapper trust-wrapper">
+		<div class="trust-wrapper__top">
+			<div class="headling">
+			<div class="headling__top">О школе</div>
+			<h2 class="headling__buttom">Нам доверяют</h2>
+			</div>
+			<p class="paragraph paragraph_32">
+			Основатель школы и автор Антон Ларичев занимается разработкой уже более 13 лет и прошёл путь от разработчика до CTO. В курсах даются актуальные материалы без воды с опытом реальных проектов и практическим закреплением материала.
+			</p>
+		</div>
+		<div class="card card_light card_48x24 trust-wrapper__stat">
+			<div class="trust-wrapper__num">15 000</div>
+			<div class="trust-wrapper__desc">учеников по всему миру</div>
+		</div>
+		<div class="card card_light card_48x24 trust-wrapper__stat">
+			<div class="trust-wrapper__num">30 дней</div>
+			<div class="trust-wrapper__desc">гарантия возврата денег</div>
+		</div>
+		<div class="card card_light card_48x24 trust-wrapper__stat">
+			<div class="trust-wrapper__num">90%</div>
+			<div class="trust-wrapper__desc">студентов рекомендуют курсы</div>
+		</div>
+        <h3 class="trust-wrapper__h3">
+			Рейтинги на независимых платформах
+		</h3>
+		<div class="card card_light card_24x32 trust-wrapper__rating">
+			<div class="trust-wrapper__rate">4.8</div>
+			<div><img src="./images/logos/ct.svg" alt="Логотип КурсесТоп"></div>
+		</div>
+		<div class="card card_light card_24x32 trust-wrapper__rating">
+			<div class="trust-wrapper__rate">4.8</div>
+			<div><img src="./images/logos/st.svg" alt="Логотип КурсесТоп"></div>
+		</div>
+		<div class="card card_light card_24x32 trust-wrapper__rating">
+			<div class="trust-wrapper__rate">4.8</div>
+			<div><img src="./images/logos/ud.svg" alt="Логотип КурсесТоп"></div>
+		</div>
+	  </div>
+	</section>
+    <section class="section">
+      <div class="section__wrapper">
+        <div class="headling">
+          <div class="headling__top">Блог и социальные сети</div>
+          <h2 class="headling__buttom">Полезные материалы</h2>
+        </div>
+        <p class="paragraph paragraph_32">
+          Каждую неделю мы публикуем новости, обновления, а так же
+          дополнительные полезные материалы в социальных сетях:
+        </p>
+        <div class="social-icons">
+          <a href="#" class="social-icons__icon">
+            <img src="./images/social/youtube.svg" alt="Youtube PurpleSchool" />
+          </a>
+          <a href="#" class="social-icons__icon">
+            <img
+              src="./images/social/telegram.svg"
+              alt="Telegram PurpleSchool"
+            />
+          </a>
+          <a href="#" class="social-icons__icon">
+            <img src="./images/social/vk.svg" alt="ВКонтакте PurpleSchool" />
+          </a>
+        </div>
+        <div class="post-wrapper">
+          <article class="post card card_32">
+            <div class="post__content">
+              <div class="post__stats">
+                <div class="post__stat">
+                  <img
+                    src="./images/calendar-icon.svg"
+                    alt="Иконка календаря"
+                  />
+                  06 мая 2023
+                </div>
+                <div class="post__stat">
+                  <img src="./images/view-icon.svg" alt="Иконка календаря" />
+                  2 584 просмотра
+                </div>
+              </div>
+              <h3 class="post__header">
+                Критика в работе – ваш друг, но не всегда
+              </h3>
+              <div class="post__description">
+                Когда делаешь код ревью иногда встречаешь с тем, что даешь
+                конструктивную критику и она воспринимается в штыки, словно это
+                личное оскорбление. Человек всеми силами пытается сопротивляться
+                обратной связи и не готов слушать аргументы. Тут варианта два:
+                или обратная связь дана некорректно, или человек не воспринимает
+                критику. В этом посте я хочу сосредоточиться на том, как
+                работать с критикой.
+              </div>
+            </div>
+            <div class="post__button">
+              <a href="#" class="button button_ghost">Читать</a>
+            </div>
+          </article>
+          <article class="post card card_32">
+            <div class="post__content">
+              <div class="post__stats">
+                <div class="post__stat">
+                  <img
+                    src="./images/calendar-icon.svg"
+                    alt="Иконка календаря"
+                  />
+                  06 мая 2023
+                </div>
+                <div class="post__stat">
+                  <img src="./images/view-icon.svg" alt="Иконка календаря" />
+                  2 584 просмотра
+                </div>
+              </div>
+              <h3 class="post__header">
+                Критика в работе – ваш друг, но не всегда
+              </h3>
+              <div class="post__description">
+                Когда делаешь код ревью иногда встречаешь с тем, что даешь
+                конструктивную критику и она воспринимается в штыки, словно это
+                личное оскорбление. Человек всеми силами пытается сопротивляться
+                обратной связи и не готов слушать аргументы. Тут варианта два:
+                или обратная связь дана некорректно, или человек не воспринимает
+                критику. В этом посте я хочу сосредоточиться на том, как
+                работать с критикой.
+              </div>
+            </div>
+            <div class="post__button">
+              <a href="#" class="button button_ghost">Читать</a>
+            </div>
+          </article>
+          <article class="post card card_32">
+            <div class="post__content">
+              <div class="post__stats">
+                <div class="post__stat">
+                  <img
+                    src="./images/calendar-icon.svg"
+                    alt="Иконка календаря"
+                  />
+                  06 мая 2023
+                </div>
+                <div class="post__stat">
+                  <img src="./images/view-icon.svg" alt="Иконка календаря" />
+                  2 584 просмотра
+                </div>
+              </div>
+              <h3 class="post__header">
+                Критика в работе – ваш друг, но не всегда
+              </h3>
+              <div class="post__description">
+                Когда делаешь код ревью иногда встречаешь с тем, что даешь
+                конструктивную критику и она воспринимается в штыки, словно это
+                личное оскорбление. Человек всеми силами пытается сопротивляться
+                обратной связи и не готов слушать аргументы. Тут варианта два:
+                или обратная связь дана некорректно, или человек не воспринимает
+                критику. В этом посте я хочу сосредоточиться на том, как
+                работать с критикой.
+              </div>
+            </div>
+            <div class="post__button">
+              <a href="#" class="button button_ghost">Читать</a>
+            </div>
+          </article>
+        </div>
+        <div class="button-more">
+          <a href="#" class="button button_ghost">Все публикации</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__social">
+          <a href="#"
+            ><img
+              class="footer__logo"
+              src="./images/logo.svg"
+              alt="Логотип PurpleSchool"
+          /></a>
+          <div class="social-icons">
+            <a href="#" class="social-icons__icon">
+              <img
+                src="./images/social/youtube.svg"
+                alt="Youtube PurpleSchool"
+              />
+            </a>
+            <a href="#" class="social-icons__icon">
+              <img
+                src="./images/social/telegram.svg"
+                alt="Telegram PurpleSchool"
+              />
+            </a>
+            <a href="#" class="social-icons__icon">
+              <img src="./images/social/vk.svg" alt="ВКонтакте PurpleSchool" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <nav>
+            <div class="footer__menu-header">Меню</div>
+            <ul class="menu-small">
+              <li class="menu-small__item"><a href="#">Курсы</a></li>
+              <li class="menu-small__item"><a href="#">О школе</a></li>
+              <li class="menu-small__item"><a href="#">Блог</a></li>
+              <li class="menu-small__item"><a href="#">База знаний</a></li>
+            </ul>
+          </nav>
+          <div>
+            <div class="footer__menu-header">Документы</div>
+            <ul class="menu-small">
+              <li class="menu-small__item"><a href="#">Договор Оферта</a></li>
+              <li class="menu-small__item">
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer__menu-header">Реквизиты</div>
+            <ul class="menu-small">
+              <li class="menu-small__item">ИП Ларичев Антон Андреевич</li>
+              <li class="menu-small__item">ИНН 773373765379</li>
+              <li class="menu-small__item">
+                <a href="mailto:contact@purpleschool.ru"
+                  >contact@purpleschool.ru</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copywrite">
+          PurpleSchool © 2020 - 2023 Все права защищены
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
