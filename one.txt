@@ -1,3 +1,11 @@
+!!!EVERYTHING ABOUT GIT AND REPOS!!!
+
+git init
+git add .
+git commit -m "Commit"
+git remote add origin ~
+git push origin master
+git --set-upstream
 
 git add .
 git commit -m "Commit"
