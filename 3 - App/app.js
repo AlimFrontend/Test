@@ -755,6 +755,19 @@ async function generate() {
   }
 }
 
+const цель = 200;
+
+function стрелять(цель, урон, урон2) {
+  let прицел = Math.floor(Math.random() * ((урон2) - (урон) + 1) + (урон));
+  if (прицел > урон) {
+    цель -= прицел;
+    return console.log(`У противника ${цель} едениц здоровья`);
+  }
+}
+
+стрелять(цель, 1, 201);
+
+
 
 
 
@@ -769,3 +782,5 @@ function generate(event) {
   console.log(`clientWidth: ${document.documentElement.clientWidth}`);
   console.log(`clientHeight: ${document.documentElement.clientHeight}`);
 };
+
+
