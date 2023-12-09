@@ -1,27 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: 'Comfortaa';
 }
-
-div {
-  font-size: 30px;
-}
-input {
-  margin-bottom: 20px;
-}
-
-
 
 body {
   text-align: center;
   align-items: center;
-}
-.buton {
-  margin: 0 auto;
-  font-family: 'Comfortaa';
-  border-radius: 10px;
-  border: none;
-  padding: 10px;
-  margin: 10px;
 }
 .wrapper {
   display: flex;
@@ -31,17 +15,11 @@ body {
   flex-direction: column;
 }
 .wrapper > div {
-  background-color: #333;
-  color: white;
-  height: 30px;
+  border: 2px solid black;
+  color: black;
   border-radius: 10px;
-  font-family: 'Comfortaa';
-  width: 100px;
-  margin: 0 auto;
 }
 .yellow {
-  border: 2px solid rgb(253, 242, 33);
-  background-color: aqua;
-  height: 50px;
+  background-color: yellow;
 }
 
