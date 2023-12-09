@@ -6,14 +6,12 @@ div {
   background-color: #fff;
   font-size: 30px;
 }
-
-.wrapper > div {
-  background: #333;
-  padding: 20px;
-  color: white;
-  border-radius: 10px;
-  font-family: 'Comfortaa';
+input {
+  background-color: #444;
 }
+
+
+
 .body {
   text-align: center;
   align-items: center;
@@ -32,8 +30,20 @@ div {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  flex-direction: column;
+}
+.wrapper > div {
+  background: #333;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
 }
 .q {
   background-color: none;
+}
+.yellow {
+  background-color: yellow;
+  color: 333;
 }
 

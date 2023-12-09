@@ -767,14 +767,10 @@ function стрелять(цель, урон, урон2) {
 
 стрелять(цель, 1, 201);
 
-
-
-
-
-*/
-
-
-
+window.addEventListener('beforeunload', function(e) {
+e.preventDefault();
+e.returnValue =  '';
+});
 
 function generate(event) {
   console.log(`scrollX: ${window.scrollX}`);
@@ -784,3 +780,29 @@ function generate(event) {
 };
 
 
+
+
+
+*/
+
+
+
+
+const wrapper = document.querySelector('.wrapper');
+
+for (let i = 0; i < 100; i++) {
+  const el = document.createElement('div');
+  el.innerHTML = i;
+  wrapper.append(el);
+};
+
+function search(event) {
+  const inputValue = event.target.value;
+  for (const el of [...wrapper.children]) {
+    if (el.innerHTML.includes(inputValue)) {
+      el.classList.add('yellow');
+      continue;
+    }
+    el.classList.remove('yellow');
+  };
+};
