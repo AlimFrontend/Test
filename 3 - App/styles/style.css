@@ -3,23 +3,21 @@
 }
 
 div {
-  background-color: #fff;
   font-size: 30px;
 }
 input {
-  background-color: #444;
+  margin-bottom: 20px;
 }
 
 
 
-.body {
+body {
   text-align: center;
   align-items: center;
 }
 .buton {
   margin: 0 auto;
   font-family: 'Comfortaa';
-  background-color: cornflowerblue;
   border-radius: 10px;
   border: none;
   padding: 10px;
@@ -33,17 +31,17 @@ input {
   flex-direction: column;
 }
 .wrapper > div {
-  background: #333;
-  padding: 20px;
+  background-color: #333;
   color: white;
+  height: 30px;
   border-radius: 10px;
   font-family: 'Comfortaa';
-}
-.q {
-  background-color: none;
+  width: 100px;
+  margin: 0 auto;
 }
 .yellow {
-  background-color: yellow;
-  color: 333;
+  border: 2px solid rgb(253, 242, 33);
+  background-color: aqua;
+  height: 50px;
 }
 

@@ -1,7 +1,5 @@
 'use strict';
 
-console.log(Date());
-
 /*
 (>_<)
 (-_-)
@@ -789,7 +787,6 @@ function generate(event) {
 
 
 const wrapper = document.querySelector('.wrapper');
-
 for (let i = 0; i < 100; i++) {
   const el = document.createElement('div');
   el.innerHTML = i;
