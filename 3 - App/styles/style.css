@@ -7,17 +7,25 @@ body {
   text-align: center;
   align-items: center;
 }
+input {
+  margin: 10px;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .wrapper > div {
   border: 2px solid black;
   color: black;
   border-radius: 10px;
+  width: 40px;
+  height: 50px;
+  padding-top: 3px;
 }
 .yellow {
   background-color: yellow;

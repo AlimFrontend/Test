@@ -787,7 +787,7 @@ function generate(event) {
 
 
 const wrapper = document.querySelector('.wrapper');
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 84; i++) {
   const el = document.createElement('div');
   el.innerHTML = i;
   wrapper.append(el);
@@ -803,3 +803,9 @@ function search(event) {
     el.classList.remove('yellow');
   };
 };
+
+
+function random(min, max) {
+  return console.log(Math.floor(Math.random() * (max - min + 1) + min));
+}
+random(0, 9);
