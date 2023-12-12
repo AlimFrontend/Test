@@ -10,3 +10,4 @@ git add .
 git commit -m "Commit"
 git push
 
+rollup example.js --file bundle.js --format iife/cjs/myBundle
