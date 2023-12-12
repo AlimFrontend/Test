@@ -777,15 +777,6 @@ function generate(event) {
   console.log(`clientHeight: ${document.documentElement.clientHeight}`);
 };
 
-
-
-
-
-*/
-
-
-
-
 const wrapper = document.querySelector('.wrapper');
 for (let i = 0; i < 84; i++) {
   const el = document.createElement('div');
@@ -809,3 +800,21 @@ function random(min, max) {
   return console.log(Math.floor(Math.random() * (max - min + 1) + min));
 }
 random(0, 9);
+
+
+
+
+*/
+
+
+
+
+export const a = 100;
+
+export function add(f, s) {
+  return console.log(f + s);
+}
+
+
+
+
