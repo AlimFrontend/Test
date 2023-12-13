@@ -808,12 +808,27 @@ random(0, 9);
 
 
 
-
-export const a = 100;
-
-export function add(f, s) {
+function add(f, s) {
   return console.log(f + s);
 }
+
+function div(f, s) {
+  return console.log(f / s);
+}
+
+function sub(f, s) {
+  return console.log(f - s);
+}
+
+function mult(f, s) {
+  return console.log(f * s);
+}
+
+add(4, 6);
+sub(6, 2);
+div(9, 3);
+mult(5, 4);
+
 
 
 
