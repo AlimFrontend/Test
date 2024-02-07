@@ -1,0 +1,1 @@
+a=(a,b,c,d,e,f,g,h)=>{q=a+b+c+d+e+f+g+h;return console.log(q+100*2)};
