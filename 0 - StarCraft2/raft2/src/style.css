@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+}
+body {
+  background-color: #ffddd3;
+}
+h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+/*
+.noSee {
+  display: none;
+}
+.lostScreen {
+}
+*/
+.battle-section_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.unit {
+  width: 200px;
+  height: 100px;
+}
+.counter-section {
+  display: flex;
+  flex-direction: row;
+}
+.counter-section {
+  background-color: #bea39b;
+}
+.battle-section {
+  margin: 100px;
+}
+.counter-section_wrapper {
+  margin: 20px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #b1b1b1;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.enemy-section_wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  background-color: #905190;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.army-section_wrapper {
+  margin: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #ff6161;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.counter-section_wrapper-1 {
+  margin: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #b1b1b1;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.mineral-section_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#surrender-section_wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #964496;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+#surrender-section_wrapper:hover {
+  background-color: #703370;
+  cursor: pointer;
+}
+#surrender-section_wrapper:active {
+  background-color: #6f296f;
+  cursor: pointer;
+}
+#getMinerals {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #000000;
+  background-color: #56beff;
+  color: #000000;
+  margin: 20px;
+}
+#getVespine {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #000000;
+  background-color: #8bff56;
+  color: #000000;
+  margin: 20px;
+}
+#getArmy {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #000000;
+  background-color: #ff6161;
+  color: #000000;
+  margin: 20px;
+}
+#attack {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #000000;
+  background-color: #ff4b4b;
+  color: #000000;
+  margin: 20px;
+}
+#getMinerals:hover {
+  cursor: pointer;
+  background-color: #4ba1d6;
+}
+#getVespine:hover {
+  cursor: pointer;
+  background-color: #7ee44f;
+}
+#getArmy:hover {
+  cursor: pointer;
+  background-color: #d14f4f;
+}
+#attack:hover {
+  cursor: pointer;
+  background-color: #cc3c3c;
+}
+#getMinerals:active {
+  background-color: #3692cc;
+}
+#getVespine:active {
+  background-color: #69d537;
+}
+#getArmy:active {
+  background-color: #d43f3f;
+}
+#attack:active {
+  background-color: #cc2d2d;
+}
+#vespineCounter {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 50px;
+  padding-right: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+#mineralsCounter {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 50px;
+  padding-right: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+#armyCounter {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 50px;
+  padding-right: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+#enemyCounter {
+  padding: 5px;
+  margin: 10px;
+  margin-left: 50px;
+  padding-right: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}

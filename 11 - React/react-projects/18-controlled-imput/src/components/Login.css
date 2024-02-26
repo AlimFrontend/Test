@@ -1,0 +1,40 @@
+section {
+  background-color: #ffe1e1;
+  padding: 20px;
+  margin-top: 50px;
+}
+input {
+  border: 0;
+  background-color: #ffeaea;
+  padding: 15px;
+  font-size: 15px;
+  width: 300px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+input:hover {
+  border: 0;
+  background-color: #ffbebe;
+  cursor: pointer;
+}
+input:active {
+  border: 0;
+  background-color: #f4a0a0;
+  cursor: pointer;
+}
+button {
+  border: 0;
+  background-color: #ffeaea;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 410px;
+}
+button:hover {
+  background-color: #ffbebe;
+  cursor: pointer;
+}
+button:active {
+  background-color: #f4a0a0;
+}
