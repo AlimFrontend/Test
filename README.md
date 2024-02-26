@@ -1,3 +1,3 @@
 # Repository
 
-If said shortly - this is my repo while im learning frontend)
+Lookin' for someone to hire me as a trainee*)
