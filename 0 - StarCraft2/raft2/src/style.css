@@ -11,13 +11,76 @@ h2 {
   font-size: 40px;
   padding: 10px;
 }
-/*
-.noSee {
+
+#backpopup1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000be;
+  width: 1433px;
+  height: 763px;
+}
+#backpopup2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000be;
+  width: 1433px;
+  height: 763px;
+}
+
+.isVisible {
   display: none;
 }
-.lostScreen {
+
+#loser {
+  border-radius: 20px;
+  opacity: 1;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #bea39b;
+  width: 800px;
+  height: 600px;
+  align-items: center;
 }
-*/
+#winner {
+  border-radius: 20px;
+  opacity: 1;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #bea39b;
+  width: 800px;
+  height: 600px;
+  align-items: center;
+}
+#img {
+  opacity: 1;
+  margin-top: 20px;
+  width: 400px;
+  height: 300px;
+  border-radius: 100px;
+}
+
+#dmg {
+  color: #fff;
+  margin-left: 160px;
+  margin-bottom: 5px;
+}
+#used {
+  color: #fff;
+  margin-left: 160px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  opacity: 1;
+  margin-top: 20px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
 .battle-section_wrapper {
   display: flex;
   flex-direction: row;
@@ -105,6 +168,40 @@ h2 {
   background-color: #56beff;
   color: #000000;
   margin: 20px;
+}
+#next {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #703370;
+  background-color: #964496;
+  color: #ffffff;
+  margin: 40px;
+}
+#next:hover {
+  cursor: pointer;
+  background-color: #7d387d;
+}
+#next:active {
+  background-color: #682568;
+}
+#revenge {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #703370;
+  background-color: #964496;
+  color: #ffffff;
+  margin: 40px;
+}
+#revenge:hover {
+  cursor: pointer;
+  background-color: #7d387d;
+}
+#revenge:active {
+  background-color: #682568;
 }
 #getVespine {
   height: 100px;

@@ -2,77 +2,114 @@ let minerals = 0;
 var enemy = 0;
 let vespine = 0;
 let army = 0;
+
 let level1 = 1000;
 let level2 = 500;
 let level3 = 400;
 let level4 = 200;
+let level5 = 100;
+let difficulty = level2;
 
 function stop() {
   clearInterval(intervalID);
 }
-const mCV = document.getElementById('mineralsCounter');
-const mB = document.getElementById('getMinerals');
-const vCV = document.getElementById('vespineCounter');
-const vB = document.getElementById('getVespine');
-const aCV = document.getElementById('armyCounter');
-const aB = document.getElementById('getArmy');
-const eCV = document.getElementById('enemyCounter');
-const attB = document.getElementById('attack');
-const surrB = document.getElementById('surrender-section_wrapper');
+const mineralsCounter = document.getElementById('mineralsCounter');
+const enemyCounter = document.getElementById('enemyCounter');
+const vespineCounter = document.getElementById('vespineCounter');
+const armyCounter = document.getElementById('armyCounter');
+const getMinerals = document.getElementById('getMinerals');
+const getVespine = document.getElementById('getVespine');
+const getArmy = document.getElementById('getArmy');
+const AttackBtn = document.getElementById('attack');
+const looseBtn = document.getElementById('surrender-section_wrapper');
 
-mB.addEventListener('click', () => {
+const revenge = document.getElementById('revenge');
+const next = document.getElementById('next');
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function restart() {
+  return setTimeout(() => {
+    intervalID = setInterval(function () {
+      enemy++;
+      enemyCounter.innerHTML = enemy;
+    }, difficulty);
+  }, difficulty);
+}
+
+revenge.addEventListener('click', () => {
+  restart();
+  enemy = 0;
+  document.getElementById('backpopup1').classList.toggle('isVisible');
+});
+
+next.addEventListener('click', () => {
+  restart();
+  minerals = 0;
+  vespine = 0;
+  army = 0;
+  enemy = 0;
+  document.getElementById('backpopup2').classList.toggle('isVisible');
+});
+
+getMinerals.addEventListener('click', () => {
+  //minerals
   minerals++;
-  mCV.innerHTML = minerals;
+  mineralsCounter.innerHTML = minerals;
 });
-vB.addEventListener('click', () => {
+getVespine.addEventListener('click', () => {
+  //vespine
   vespine++;
-  vCV.innerHTML = vespine;
+  vespineCounter.innerHTML = vespine;
 });
-aB.addEventListener('click', () => {
-  if (minerals <= 1) {
+getArmy.addEventListener('click', () => {
+  //army
+  if (minerals <= 2) {
     return;
   }
   if (vespine <= 1) {
     return;
   }
-  minerals = minerals - 3;
-  mCV.innerHTML = minerals;
+  minerals = minerals - 2;
+  mineralsCounter.innerHTML = minerals;
   vespine = vespine - 1;
-  vCV.innerHTML = vespine;
+  vespineCounter.innerHTML = vespine;
   army++;
-  aCV.innerHTML = army;
+  armyCounter.innerHTML = army;
 });
-attB.addEventListener('click', () => {
-  enemy = enemy - army * (level2 / 100);
+AttackBtn.addEventListener('click', () => {
+  //attack
+  enemy = enemy - army * 2;
   army = 0;
-  aCV.innerHTML = army;
-  eCV.innerHTML = enemy;
+  armyCounter.innerHTML = army;
+  enemyCounter.innerHTML = enemy;
   if (enemy <= 0) {
     stop();
+    document.getElementById('backpopup2').classList.toggle('isVisible');
   }
   if (enemy >= 100) {
     stop();
+    document.getElementById('backpopup1').classList.toggle('isVisible');
   }
 });
+
 intervalID = setInterval(function () {
   enemy++;
-  eCV.innerHTML = enemy;
-}, level2);
-surrB.addEventListener('click', () => {
+  enemyCounter.innerHTML = enemy;
+}, difficulty);
+
+looseBtn.addEventListener('click', () => {
   stop();
   minerals = 0;
-  enemy = 0;
   vespine = 0;
   army = 0;
-  eCV.innerHTML = enemy;
-  aCV.innerHTML = army;
-  mCV.innerHTML = minerals;
-  vCV.innerHTML = vespine;
+  enemy = 0;
+  enemyCounter.innerHTML = enemy;
+  armyCounter.innerHTML = army;
+  mineralsCounter.innerHTML = minerals;
+  vespineCounter.innerHTML = vespine;
 
-  setTimeout(() => {
-    intervalID = setInterval(function () {
-      enemy++;
-      eCV.innerHTML = enemy;
-    }, level2);
-  }, level2 * 10);
+  document.getElementById('backpopup1').classList.toggle('isVisible');
 });
